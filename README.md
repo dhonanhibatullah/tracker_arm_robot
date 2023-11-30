@@ -11,11 +11,6 @@ The dynamics of an armature linkage can be written generally as
 
 $$\tau = M(\theta)\ddot{\theta} + C(\theta, \dot{\theta})\dot{\theta} + g(\theta)$$
 
-or in this particular case:
-
-$$\begin{bmatrix}\tau_1 \\ \tau_2\end{bmatrix}=
-\begin{bmatrix}m_1l_{c1}^2+m_2(l_1^2+l_{c2}^2+2l_1l_{c2}\cos(\theta_2))+I_1+I_2 & m_2(l_{c2}^2+l_1l_{c2}\cos(\theta_2))+I_2 \\ m_2(l_{c2}^2+l_1l_{c2}\cos(\theta_2))+I_2 & m_2l_{c2}^2+I_2\end{bmatrix}\begin{bmatrix}\ddot{\theta}_1 \\ \ddot{\theta}_2\end{bmatrix} + \begin{bmatrix}-2m_2l_1l_{c2}\sin(\theta_2)\dot{\theta}_2 & -m_2l_1l_{c2}\sin(\theta_2)\dot{\theta}_2 \\ m_2l_1l_{c2}\sin(\theta_2)\dot{\theta}_1 & 0\end{bmatrix}\begin{bmatrix}\dot{\theta}_1 \\ \dot{\theta}_2\end{bmatrix} - \begin{bmatrix}m_1gl_{c1}\cos(\theta_1)+m_2g(l_1\cos(\theta_1)+l_{c2}\cos(\theta_1 + \theta_2)) \\ m_2gl_{c2}\cos(\theta_1 + \theta_2)\end{bmatrix}$$
-
 We can rewrite the equation as follows to simulate the dynamics.
 
 $$\ddot{\theta} = M^{-1}(\theta)\left( \tau - C(\theta, \dot{\theta})\dot{\theta} - g(\theta) \right)$$
