@@ -22,6 +22,7 @@ $$\ddot{\theta} = M^{-1}(\theta)\left( \tau - \left(C(\theta, \dot{\theta}) + b\
 The control law used for $\tau$ is
 
 $$F = \ddot{x}_d(t) + K_px_e(t) + K_i\int_0^tx_e(t)dt$$
+
 $$\tau = \tilde{M}(\theta)\left(J^TF + K_d\left(J^{-1}\dot{x}_d - \dot{\theta} \right) \right) + \tilde{h}(\theta, \dot{\theta})$$
 
 You can tune $K_p$, $K_i$, and $K_d$ values in tar_main.py.
