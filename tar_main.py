@@ -26,9 +26,9 @@ tar_simulator   = TarSimulator(
 
 # Determine the control law
 KP          = 80
-KI          = 12
-KD          = 4
-MAX_TORQUE  = 100
+KI          = 34
+KD          = 4.0
+MAX_TORQUE  = 60
 
 dt      = 0.016667
 time    = 0.0
